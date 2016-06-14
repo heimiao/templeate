@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='../bootstrap/css/font-awesome.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../css/mui.css" />		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<!--<script type="text/javascript" src="../bootstrap/js/placeholderfriend.js" ></script>-->
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/formValidation.js"></script>
+		<script type="text/javascript" src="js/bootstrap1.js" ></script>
+		<script type="text/javascript" src="js/zh_CN.js" ></script>
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<form class="form-horizontal" id="userForm">
+			<div class="col-sm-12 col-xs-12 col-md-12 form_mar-b" style="position: relative;">
+				<div class="form-control xinzen"/>
+					<img src="img/trad_editor1.png" class="left form_padd-l" style="margin-top: 3px;margin-left: -15px;">
+					<div class="form_padd-l1">方案信息</div>
+					<div class="form_shu"></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">方案名称</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="建材项目投资" name="famcname">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">企业名称</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control" name="company_qi">
+					    		<option  value="">请选择</option>
+					    		<option>大唐电信</option>
+					    		<option>2</option>
+					    		<option>3</option>
+					    	</select>
+					    </div>
+				  </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">交易形式</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control" name="trad_gzt">
+					    		<option  value="">请选择</option>
+					    		<option>股权投资</option>
+					    		<option>债券投资</option>
+					    		<option>投资退出</option>
+					    	</select>
+					    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">方案状态</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>项目筛选</option>
+					    		<option>投委会决策</option>
+					    		<option>投资意向书</option>
+					    		<option>尽职调查</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    	</select>
+					    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la"></label>
+					    <div class="col-sm-8">
+					    	<div class="radio">
+							    <label>
+							    	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">股权投资
+							    </label>
+							    <label>
+							    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">债券投资
+							    </label>
+							    <label>
+							    	<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">投资退出
+							    </label>
+							</div>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-xs-12 col-md-12 form_mar-b" style="position: relative;">
+				<div class="form-control xinzen"/>
+					<img src="img/trad_editor1.png" class="left form_padd-l" style="margin-top: 3px;margin-left: -15px;">
+					<div class="form_padd-l1">交易状态</div>
+					<div class="form_shu"></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">本次融资轮次</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control" name="trad_rzlc">
+					    		<option value="">请选择</option>
+					    		<option>--H轮--</option>
+					    		<option>债券投资</option>
+					    		<option>投资退出</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">交易币种</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control" name="trad_jybz">
+					    		<option value="">请选择</option>
+					    		<option>--人民币--</option>
+					    		<option>美元</option>
+					    		<option>欧元</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">每股价格</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="2500" name="trad_price">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">本轮总额</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="6000" name="trad_total">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">本轮出让股比例</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_rang">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">投后估值</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="6000" name="trad_gu">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">出让方式</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control" name="trad_crfs">
+					    		<option value="">请选择</option>
+					    		<option>按比例分摊</option>
+					    		<option>美元</option>
+					    		<option>欧元</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">出让股东</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_dong">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">董事数量</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_num">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">监事数量</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_jian">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">交易时间</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_time">
+					    </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-xs-12 col-md-12 form_mar-b" style="position: relative;">
+				<div class="form-control xinzen"/>
+					<img src="img/trad_editor1.png" class="left form_padd-l" style="margin-top: 3px;margin-left: -15px;">
+					<div class="form_padd-l1">投资方信息</div>
+					<div class="form_shu"></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">回购条款</label>
+					    <div class="col-sm-8">
+					    	<div class="radio">
+							    <label>
+							    	<input type="radio" name="falseRadios" id="optionsRadios1" value="option1">是
+							    </label>
+							    <label>
+							    	<input type="radio" name="falseRadios" id="optionsRadios2" value="option2">否
+							    </label>
+							</div>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">回购价格</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_buyprice">
+					    </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-8 col-sm-12">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label la">回购率说明</label>
+					    <div class="col-sm-10" >
+					    	<textarea class="form-control" rows="5" onresize="none"></textarea>
+					    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">回购利率</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_ll">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">委派董事长</label>
+					    <div class="col-sm-8">
+					    	<div class="radio">
+							    <label>
+							    	<input type="radio" name="trueRadios" id="optionsRadios1" value="option1">是
+							    </label>
+							    <label>
+							    	<input type="radio" name="trueRadios" id="optionsRadios2" value="option2">否
+							    </label>
+							</div>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">董事会席位</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_zhu">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">委派总经理</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_manager">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">财务总监</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_cwzj">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">反稀释条款</label>
+					    <div class="col-sm-8">
+					        <input type="text" class="form-control" id="inputEmail3" placeholder="" name="trad_fxstk">
+					    </div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12 col-md-12 form_mar-b" style="position: relative;">
+					<div class="form-control xinzen"/>
+						<img src="img/trad_editor1.png" class="left form_padd-l" style="margin-top: 3px;margin-left: -15px;">
+						<div class="form_padd-l1">其他</div>
+						<div class="form_shu"></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">退出方式</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control" name="trad_tcfs">
+					    		<option value="">请选择</option>
+					    		<option>IPO/并购</option>
+					    		<option>美元</option>
+					    		<option>欧元</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">推出信息</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control" name="trad_tcxx">
+					    		<option value="">请选择</option>
+					    		<option>出让方</option>
+					    		<option>美元</option>
+					    		<option>欧元</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<label class="col-sm-4"></label>
+					<div class="col-sm-8">
+						<button type="submit" class="userMsg_trueBtn  btn-ok">
+	    					<span class="ladda-label">确定</span>
+	    				</button>
+	    				<button type="button" class="userMsg_calBtn" data-dismiss="modal">
+	    					<span class="ladda-label">取消</span>
+	    				</button>
+					</div>
+				</div>
+			</div>
+			<!--<div class="col-md-12 col-xs-12">
+				<div class="col-md-4 col-xs-12 col-sm-6 mar-t mar-b">
+					<div class="userMsg_blueBtn" data-toggle="modal" data-target="#baoModal">保存</div>
+				<a href="trad_list.html">
+					<button type="button" class="userMsg_grayBtn">取消</button>
+				</a>
+				</div>
+			</div>-->
+		</form>
+		<script type="text/javascript">
+		//校验
+		$(document).ready(function() {
+			$('#userForm').formValidation({
+			        err: {
+			            container: 'tooltip'
+			        },
+			        icon: {
+			            valid: 'glyphicon glyphicon-ok',
+			            invalid: 'glyphicon glyphicon-remove',
+			            validating: 'glyphicon glyphicon-refresh'
+			        },
+			        fields: {
+			            famcname: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '请输入方案名称'
+			                    }
+			                }
+			            },
+			            trad_price: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '每股价格不能为空'
+			                    },
+			                    regexp: {
+			                        enabled: true,
+			                        regexp: /^[1-9]d*.d*|0.d*[1-9]d*|0?.0+|0$/i,
+			                        message: '输入内容只能含有数字和小数点且不少于两位'
+			                    }  
+			                }
+			            },
+			            trad_total: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '本轮总额不能为空'
+			                    },
+			                    regexp: {
+			                        enabled: true,
+			                        regexp: /^[1-9]d*.d*|0.d*[1-9]d*|0?.0+|0$/i,
+			                        message: '输入内容只能含有数字和小数点且不少于两位'
+			                    } 
+			                }
+			            },
+			            trad_rang: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '本轮出让股比例不能为空'
+			                    } 
+			                }
+			            },
+			            trad_gu: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '投后估值不能为空'
+			                    },
+			                    regexp: {
+			                        enabled: true,
+			                        regexp: /^[1-9]d*.d*|0.d*[1-9]d*|0?.0+|0$/i,
+			                        message: '输入内容只能含有数字和小数点且不少于两位'
+			                    }  
+			                }
+			            },
+			            trad_dong: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '出让股东不能为空'
+			                    } 
+			                }
+			            },
+			            trad_num: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '董事数量不能为空'
+			                    },
+			                    regexp: {
+			                        enabled: true,
+			                        regexp: /[1-9]$/i,
+			                        message: '输入内容只能有数字'
+			                    }  
+			                }
+			            },
+			            trad_jian: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '监事数量不能为空'
+			                    } 
+			                }
+			            },
+			            trad_time: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '交易时间不能为空'
+			                    } 
+			                }
+			            },
+			            trad_buyprice: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '回购价格不能为空'
+			                    },
+			                    regexp: {
+			                        enabled: true,
+			                        regexp: /^[1-9]d*.d*|0.d*[1-9]d*|0?.0+|0$/i,
+			                        message: '输入内容只能含有数字和小数点且不少于两位'
+			                    }
+			                }
+			            },
+			            trad_ll: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '回购利率不能为空'
+			                    } 
+			                }
+			            },trad_zhu: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '董事会主席不能为空'
+			                    } 
+			                }
+			            },trad_manager: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '委派总经理不能为空'
+			                    } 
+			                }
+			            },trad_cwzj: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '财务总监不能为空'
+			                    } 
+			                }
+			            },trad_fxstk: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '反稀释条款不能为空'
+			                    } 
+			                }
+			            },
+			            optionsRadios: {
+			                validators: {
+			                    notEmpty: {}
+			                }
+			            },
+			            trueRadios: {
+			                validators: {
+			                    notEmpty: {}
+			                }
+			            },
+			            falseRadios: {
+			                validators: {
+			                    notEmpty: {}
+			                }
+			            },
+			            company_qi: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '企业名称不能为空'
+			                    }
+			                }
+			            },
+			            trad_gzt: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '请选择交易形式'
+			                    }
+			                }
+			            },
+			            trad_rzlc: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '请选择交易形式'
+			                    }
+			                }
+			            },
+			            trad_jybz: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '请选择交易币种'
+			                    }
+			                }
+			            },
+			            trad_crfs: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '请选择出让方式'
+			                    }
+			                }
+			            },
+			            trad_tcfs: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '请选择退出方式'
+			                    }
+			                }
+			            },
+			            trad_tcxx: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '请选择推出信息'
+			                    }
+			                }
+			            }
+			             
+			        }
+			    });
+			
+			});
+			 
+		</script>
+	</body>
+</html>

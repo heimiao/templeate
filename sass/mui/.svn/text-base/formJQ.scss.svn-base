@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+/**list页面**/
+//form表单设置
+
+.fi_add{
+    
+    .form-group{
+        
+        margin-right: 20px;
+    .input-group{
+        background: #FFFFFF;
+        border-radius: 5px;
+        input{
+            //border-right: 0px;
+            //box-shadow: none;
+            height: 30px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            font-size: 12px;
+            position: relative;
+            z-index: 10;
+            opacity: 0.3;
+            border: 2px solid #CCCCCC;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        span{
+            position: absolute;
+            right: 5px;
+            top:3px;
+            z-index: 1;
+        }
+        /**div{
+            background: #fff;
+            height: 28px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-right: 5px;
+            font-size: 12px;
+            img{
+                cursor: pointer;
+            }
+        }**/
+    }
+    .filter{
+        height: 28px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 12px;
+    }
+}
+    .fg_add{
+        position: relative;
+        input{
+           padding-left: 30px;
+        }
+        img{
+            position: absolute;
+            top: 7px;
+            left: 5px;
+        }
+    }
+    .form-group:first-child{
+        input{
+            //min-width: 240px;
+            height: 28px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            font-size: 12px;
+        }
+    }
+    .form-group:last-child{
+        margin-right: 0px;
+    }
+    //修改按钮在最小状态下的样式
+    @media (max-width:768px) {
+        .form-group:last-child{
+            margin-right: 20px; 
+        } 
+    }
+}
+/**设置日历箭头**/
+.glyphicon-arrow-left::before {
+    content: "<";
+}
+.glyphicon-arrow-right::before {
+    content: ">";
+}
+/**创建按钮**/
+.bnsCreat_blueBtn{
+    @include data-btn(93px,27px,#21A0E8,#fff);    
+} 
+.bnsSearch_greyBtn{
+    @include data-btn(93px,27px,#484F63,#fff);    
+} 

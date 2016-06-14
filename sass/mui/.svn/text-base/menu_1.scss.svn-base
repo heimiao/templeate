@@ -1,0 +1,38 @@
+.topMenu{
+    background:#1f262d;line-height:40px;
+    >nav{
+         height:100%;
+        ul{
+             height:100%;
+             width:100%;
+             margin:0px;
+             padding:0px;
+             text-align:center;
+             font-size:0px;
+            li{
+                height:100%;
+                list-style-type:none;
+                display:inline-block;
+                vertical-align: middle;
+              a{ 
+                  height:100%;
+                  color:#fff;
+                  display:block;
+                  padding:2px 10px;
+                  font-size:14px;
+                  &:hover{
+                      background:#0d90cf;
+                      text-decoration:none;
+                  } 
+                  img{
+                      margin-right:3px; 
+                  }
+              }
+            }
+            .checked{
+                 background:#0d90cf;
+                 text-decoration:none;
+            }
+        }
+    }
+}

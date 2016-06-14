@@ -1,0 +1,16 @@
+.file{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 35px;
+    width: 100px;
+    opacity: 0;
+}
+.upload_text{
+    height: 35px;
+    border: 0px;
+}
+.upload_marl{
+    margin-left: 3px;
+    margin-right: 3px;
+}

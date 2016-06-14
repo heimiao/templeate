@@ -1,0 +1,4 @@
+$error:                 #f3856c !default;
+$success:               #00703e !default;
+$warning:               #e9e335 !default;
+$info:                  #21a0e8 !default; 

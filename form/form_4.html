@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='..//bootstrap/css/font-awesome.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../css/mui.css" />		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<!--<script type="text/javascript" src="../bootstrap/js/placeholderfriend.js" ></script>-->
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/formValidation.js"></script>
+		<script type="text/javascript" src="js/bootstrap1.js" ></script>
+		<script type="text/javascript" src="js/zh_CN.js" ></script>
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<form class="form-horizontal" id="eventForm">
+		    <div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">事件名称</label>
+					    <div class="col-sm-8">
+					        <input type="email" class="form-control" id="inputEmail3" placeholder="建材项目投资" name="trad_eventname">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">建立时间</label>
+					    <div class="col-sm-8">
+					        <input type="email" class="form-control" id="inputEmail3" placeholder="建材项目投资" name="trad_eventtime">
+					    </div>
+				  </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">类型</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>股权投资</option>
+					    		<option>债券投资</option>
+					    		<option>投资退出</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">事件状态</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>未开始</option>
+					    		<option>投委会决策</option>
+					    		<option>投资意向书</option>
+					    		<option>尽职调查</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">触发条件</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>时间</option>
+					    		<option>投委会决策</option>
+					    		<option>投资意向书</option>
+					    		<option>尽职调查</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">发生时间</label>
+					    <div class="col-sm-8">
+					        <input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_eventfxtime">
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">风险评估</label>
+					    <div class="col-sm-8">
+					        <input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_eventpg">
+					    </div>
+				  </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">发生概率</label>
+					    <div class="col-sm-8">
+					        <input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_fsgl">
+					    </div>
+				  </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">发生损失</label>
+					    <div class="col-sm-8">
+					        <input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_fsss">
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">风险级别</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>一般</option>
+					    		<option>投委会决策</option>
+					    		<option>投资意向书</option>
+					    		<option>尽职调查</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-8 col-sm-12">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label la">应对措施</label>
+					    <div class="col-sm-10" >
+					    	<textarea class="form-control" rows="5" style="resize: none;" name="trad_ydcs"></textarea>
+					    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-8 col-sm-12">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label la">结果记录</label>
+					    <div class="col-sm-10" >
+					    	<textarea class="form-control" rows="5" onresize="none" name="trad_jgjl"></textarea>
+					    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">附件</label>
+					    <div class="col-sm-8">
+					        <input type="email" class="form-control" id="inputEmail3" placeholder="">
+					    </div>
+				  </div>
+				</div>
+				<div class="">
+					<button class="">上传</button>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<label class="col-sm-4"></label>
+					<div class="col-sm-8">
+						<button type="submit" class="userMsg_trueBtn  btn-ok">
+	    					<span class="ladda-label">确定</span>
+	    				</button>
+	    				<button type="button" class="userMsg_calBtn" data-dismiss="modal">
+	    					<span class="ladda-label">取消</span>
+	    				</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		
+		<script type="text/javascript">
+		//校验
+		$(document).ready(function() {
+			$('#eventForm').formValidation({
+			        err: {
+			            container: 'tooltip'
+			        },
+			        icon: {
+			            valid: 'glyphicon glyphicon-ok',
+			            invalid: 'glyphicon glyphicon-remove',
+			            validating: 'glyphicon glyphicon-refresh'
+			        },
+			        fields: {
+			            trad_eventname: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '事件名称不能为空'
+			                    }
+			                }
+			            },
+			            trad_eventtime: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '建立时间不能为空'
+			                    } 
+			                }
+			            },
+			            trad_eventfxtime: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '发生时间不能为空'
+			                    } 
+			                }
+			            },
+			            trad_eventpg: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '风险评估不能为空'
+			                    } 
+			                }
+			            },
+			            trad_fsgl: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '发生概率不能为空'
+			                    } 
+			                }
+			            },
+			            trad_fsss: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '发生损失不能为空'
+			                    } 
+			                }
+			            },
+			            trad_ydcs: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '应对措施不能为空'
+			                    } 
+			                }
+			            },
+			            trad_jgjl: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '结果记录不能为空'
+			                    } 
+			                }
+			            }
+			        }
+			    });
+			
+			});
+			 
+		</script>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+.left_second_Menu{
+    width:100%;
+    overflow:hidden;
+    background:#2e363f;
+    ul{
+        margin:0px;
+        padding:0px; 
+     li{ 
+         list-style-type:none;
+         border-bottom:1px solid #262e36;
+         border-top:1px solid #38404a; 
+         line-height:40px; 
+         position:relative;
+         overflow:hidden;
+         a{
+             display:inline-block;
+             width:100%;
+             height:100%;
+             color:#9098a0;
+             text-decoration:none;
+             padding-left:25px; 
+             cursor:pointer; 
+             img{
+                 float:right;
+                 margin-top:15px;
+                 margin-right:10px;
+             }
+             &:before{
+                 display:inline-block;
+                 height:8px;
+                 width:5px;
+                 content:""; 
+                 margin-right:10px; 
+                 background:url("../menu/img/menu_2/menu_icon.png") no-repeat;
+             }
+             &:hover{
+                 color:#0d90cf; 
+                  background:#12181d;
+             }
+             &:hover:before{
+                 background:url("../menu/img/menu_2/menu_ck_icon.png") no-repeat;
+             }
+         } 
+         >ul{
+             overflow:hidden;
+             background:#222931;
+             display:none;
+             li{ 
+                 border:0px;
+                 a{
+                    &:before{
+                       background:url() no-repeat;
+                     }
+                    &:hover:before{
+                         background:url() no-repeat;
+                     }
+                 } 
+             } 
+         }
+      }     
+    .blueLine{
+          background:#222931;
+     }
+    .blueLine:before,>li:hover:before{
+            position:absolute;
+            width:5px;
+            height:100%;
+            content:"";
+            left:0px;
+            top:0px;
+            background:#0d90cf; 
+     } 
+    .checked>a{
+        color:#0d90cf; 
+        background:#12181d;
+     }  
+      
+    }
+} 

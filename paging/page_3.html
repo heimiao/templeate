@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<title>分页</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../css/mui.css" />
+
+		<script src="../js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery_page_3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div></div>
+
+		<!--多种-->
+		<nav class="Mui_mostPage  ">
+			<ul class="pagination">
+                
+			</ul>
+			<span class="text_page left">
+					 	跳转到：
+			</span>
+			<div class="input-group go_page">
+				<input type="text" class="form-control">
+				<span class="input-group-btn">
+			      <button class="btn btn-default" type="button">Go!</button>
+			  </span>
+			</div>
+		</nav>
+		<script type="text/javascript">
+			function test(test){
+				$('.pagination').remove();  
+                $(".text_page").after('<ul class="pagination"></ul>');
+				$('.pagination').twbsPagination({
+						totalPages:test,
+						visiblePages: 5,
+ 						 version: '1.1', 
+						onPageClick: function(){
+							
+						}
+					});
+			}
+		</script> 
+		<button onclick="test(1)">调用分页</button>
+		<button onclick="test(5)">调用分页</button>
+		<button onclick="test(10)">调用分页</button>
+	</body>
+
+</html>

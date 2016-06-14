@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>左侧导航组件</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href='../bootstrap/css/font-awesome.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" type="text/css" href="../css/mui.css" />
+		<!--<link rel="stylesheet" href="css/table.css" />-->
+		<script type="text/javascript" src="../bootstrap/js/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="js/menu_3.js"></script>
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="body" class="menu">
+    <div class="wrapper">
+				<aside class="aside">
+				    <div class="aside-inner">
+				         <nav class="sidebar" tagName="nav">
+				            <div name="nav-content" class="nav-content">
+				                <div class="nav-heading">
+				                    <div class="row navrow">
+				                        <div class="col-sm-10 col-xs-10 handing-name">权限管理</div>
+				                        <div class="col-sm-2 col-xs-2 pull-btn">
+				                            <em class="fa fa-angle-right upIcon"></em>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div name="nav-item" class="nav-item instances" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">权限管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div>
+				                <div name="nav-item" class="nav-item images" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">权限管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div>
+				            </div>
+				            <div name="nav-content" class="nav-content">
+				                <div class="nav-heading ">
+				                    <div class="row navrow">
+				                        <div class="col-sm-10 col-xs-10 handing-name">权限管理</div>
+				                        <div class="col-sm-2 col-xs-2 pull-btn">
+				                            <em class="fa fa-angle-right upIcon"></em>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div name="nav-item" class="nav-item instances" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">权限管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div>
+				                <div name="nav-item" class="nav-item images" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">权限管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div>
+				            </div>
+				            <div name="nav-content" class="nav-content">
+				                <div class="nav-heading ">
+				                    <div class="row navrow">
+				                        <div class="col-sm-10 col-xs-10 handing-name">登录管理</div>
+				                        <div class="col-sm-2 col-xs-2 pull-btn">
+				                            <em class="fa fa-angle-right upIcon"></em>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div name="nav-item" class="nav-item volumes" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div>
+				            </div>
+				            <div name="nav-content" class="nav-content">
+				                <div class="nav-heading ">
+				                    <div class="row navrow">
+				                        <div class="col-sm-10 col-xs-10 handing-name">角色管理</div>
+				                        <div class="col-sm-2 col-xs-2 pull-btn">
+				                            <em class="fa fa-angle-right upIcon"></em>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div name="nav-item" class="nav-item private_networks" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div>
+				                <div name="nav-item" class="nav-item subnets" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div>
+				                <div name="nav-item" class="nav-item routers" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div>
+				                <div name="nav-item" class="nav-item floating_ips" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				                <div name="nav-item" class="nav-item load_balancers" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				            </div> 
+				            <div name="nav-content" class="nav-content">
+				                <div class="nav-heading ">
+				                    <div class="row navrow"> 
+				                        <div class="col-sm-10 col-xs-10 handing-name">登录管理</div>
+				                        <div class="col-sm-2 col-xs-2 pull-btn">
+				                            <em class="fa fa-angle-right upIcon"></em>
+				                        </div>
+				                    </div>
+				                </div> 
+				                <div name="nav-item" class="nav-item keypairs" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				                <div name="nav-item" class="nav-item firewalls" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				            </div> 
+				            <div name="nav-content" class="nav-content">
+				                <div class="nav-heading ">
+				                    <div class="row navrow">
+				                        <div class="col-sm-10 col-xs-10 handing-name">权限管理</div>
+				                        <div class="col-sm-2 col-xs-2 pull-btn">
+				                            <em class="fa fa-angle-right upIcon"></em>
+				                        </div>
+				                    </div>
+				                </div> 
+				                <div name="nav-item" class="nav-item operation_logs" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">操作日志</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				                <div name="nav-item" class="nav-item consumptions" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">消费记录</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				                <div name="nav-item" class="nav-item recharge" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">充值</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				                <div name="nav-item" class="nav-item recharge_record" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">充值记录</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				                <div name="nav-item" class="nav-item tickets" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">工单</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				            </div> 
+				            <div name="nav-content" class="nav-content">
+				                <div class="nav-heading ">
+				                    <div class="row navrow"> 
+				                        <div class="col-sm-10 col-xs-10 handing-name">角色管理</div>
+				                        <div class="col-sm-2 col-xs-2 pull-btn">
+				                            <em class="fa fa-angle-right upIcon"></em>
+				                        </div>
+				                    </div>
+				                </div> 
+				                <div name="nav-item" class="nav-item relational_databases" style="display: none;">
+				                    <a class="route" href="#">
+				                        <div class="row navrow nav-second-row">
+				                            <div class="col-sm-10 col-xs-10 nav-second" name="panel-name">登录管理</div>
+				                            <div class="col-sm-2 col-xs-2"></div>
+				                        </div>
+				                    </a>
+				                </div> 
+				            </div>  
+				        </nav>
+				    </div>
+				</aside> 
+      <section>
+        <div class="content-wrapper" id="content-wrapper"></div>
+
+        <div class="uk-notify uk-notify-top-right" id="notify"></div>
+
+      </section>
+    </div>
+  </body>
+</html>

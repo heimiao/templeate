@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../css/mui.css" />
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		 
+	
+						<div  style="margin:30px auto;width:80%;">
+							<button class="btn_default" >按钮测试</button>
+						<a class="btn_info" >按钮信息</a>
+						 <span class="btn_warning" >
+						 	警告按钮
+						 </span>
+						 <div class="btn_error" >
+						 	错误按钮
+						 </div>
+						  <input type="button" value="成功按钮" class="btn_success" > 
+						</div>
+						
+		 
+	</body>
+
+</html>

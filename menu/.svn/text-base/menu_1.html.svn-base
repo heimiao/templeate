@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="//g.369cloud.com/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.css" />
+		<!--[if lt IE 9]>
+		   <script src="//g.369cloud.com/bootstrap/js/createTag.js"></script>
+		   <script src="//g.369cloud.com/bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+		<script src="//g.369cloud.com/js/jquery-1.10.2.min.js"></script>
+		<script src="//g.369cloud.com/js/placeholderfriend.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+	   <div class="topMenu">
+	   	   <nav>
+	   	   	 <ul>
+	   	   	 	<li class="checked"><a href=""><img src="img/menu_1/home_icon.png"/>首页</a></li>
+	   	   	 	<li><a href=""><img src="img/menu_1/qygl_icon.png"/>企业管理</a></li>
+	   	   	 	<li><a href=""><img src="img/menu_1/jyfa_icon.png"/>交易方案</a></li>
+	   	   	 	<li><a href=""><img src="img/menu_1/sjgl_icon.png"/>事件管理</a></li>
+	   	   	 	<li><a href=""><img src="img/menu_1/rygl_icon.png"/>人员管理</a></li>
+	   	   	 	<li><a href=""><img src="img/menu_1/sjfx_icon.png"/>数据分析</a></li>
+	   	   	 	<li><a href=""><img src="img/menu_1/yhgl_icon.png"/>用户管理</a></li>
+	   	   	 	<li><a href=""><img src="img/menu_1/pzgl_icon.png"/>配置管理</a></li>
+	   	   	 </ul>
+	   	   </nav>
+	   </div> 
+	    
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>分页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+	<link rel="stylesheet" href="css/page_4.css" />
+  </head>
+	<body>
+		
+		<h2>小于5页的分页样式</h2> 
+		<div class="Mui_page">
+			<a href="" class="pre">&nbsp;</a>
+			<a href="" class="page-unchecked">1</a> 
+			<a href="" class="page-checked">2</a>
+			<a href="" class="page-unchecked">3</a>
+			<a href="" class="page-unchecked">4</a>
+			<a href="" class="page-unchecked">5</a>
+			<a href="" class="next">&nbsp;</a> 
+		</div>
+		
+		<h2>选中小于5页的分页样式</h2> 
+		<div class="Mui_page">
+			<a href="" class="pre">&nbsp;</a>
+			<a href="" class="page-unchecked">1</a> 
+			<a href="" class="page-checked">2</a>
+			<a href="" class="page-unchecked">3</a>
+			<a href="" class="page-unchecked">4</a>
+			<a href="" class="page-unchecked">5</a> &nbsp;...&nbsp;
+			<a href="" class="page-unchecked">45</a>
+			<a href="" class="next">&nbsp;</a>
+			<span id="">
+			  跳转到<label href="" class="page-input">
+				  <input type="text" name="" id="" value="" />
+			 </label> 
+			  <a href="" class="page-checked">Go</a>
+		    </span>
+		</div>
+		
+		<h2>选中大于5页的分页样式</h2> 
+		
+		<div class="Mui_page">
+			<a href="" class="pre">&nbsp;</a>
+			<a href="" class="page-unchecked">1</a>&nbsp;...&nbsp;
+			<a href="" class="page-checked">12</a>
+			<a href="" class="page-unchecked">13</a>
+			<a href="" class="page-unchecked">14</a>
+			<a href="" class="page-unchecked">15</a>
+			<a href="" class="page-unchecked">16</a>&nbsp;...&nbsp;
+			<a href="" class="page-unchecked">45</a>
+			<a href="" class="next">&nbsp;</a>
+			<span id="">
+			  跳转到<label href="" class="page-input">
+				  <input type="text" name="" id="" value="" />
+			 </label> 
+			  <a href="" class="page-checked">Go</a>
+		    </span>
+		</div>
+		
+	</body> 
+</html>

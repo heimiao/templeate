@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../css/mui.css" />
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	    <script type="text/javascript" src="../form/js/jquery-1.10.2.min.js" ></script>
+	</head>
+	<body>
+		<div>
+			<input type="text" class="upload_text left" id="scont" readonly="readonly"/>
+			<div style="position: relative;" class="left">
+				<button class="btn_default upload_marl">按钮测试</button>
+				<input type="file" class="file" id="gender1" onchange="getPath()"/>
+			</div>
+		</div>
+		<script>
+			function getPath() {
+				$("#scont").val($("#gender1").val());
+			}
+		</script>
+	</body>
+</html>

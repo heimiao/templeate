@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link rel="stylesheet" type="text/css" href="//g.369cloud.com/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.css" />
+
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+		<!--[if lt IE 9]>
+		   <script src="//g.369cloud.com/bootstrap/js/createTag.js"></script>
+		   <script src="//g.369cloud.com/bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<!--Tab选项卡-->
+		<div class="tabControl">
+			<ul class="tabBtn">
+				<li class="checked">
+					<span class="warning_circle_icon">
+					  基本信息
+					</span>
+				</li>
+				<li>
+					<span class="error_circle_icon">
+					事件
+					</span>
+				</li>
+				<li>
+					<span class="info_circle_icon">
+					文档
+					</span>
+				</li>
+				<li>
+					<span class="success_circle_icon">
+					管理
+					</span>
+				</li>
+			</ul>
+			<div class="tabCont">
+				<section style="display:block;">
+					我是结构1
+				</section>
+				<section>
+					我是结构2
+				</section>
+				<section>
+					我是结构3
+				</section>
+				<section>
+					我是结构4
+				</section>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".tabControl>ul>li").click(function(){
+					$(".tabControl>ul>li").removeClass("checked");
+					$(this).addClass("checked");
+					$(this).parent().next().children("section").hide();
+					$(this).parent().next().children("section").eq($(this).index()).show();
+				})
+			})
+		</script>
+	</body>
+
+</html>

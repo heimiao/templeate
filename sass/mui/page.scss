@@ -1,0 +1,111 @@
+@charset "UTF-8";
+    .Mui_defaultPage { 
+        width: 300px; 
+        margin: 20px auto;
+    }
+    .Mui_defaultPage ul ,.page1 ul{ 
+        margin: 0; 
+        padding: 0;
+    }
+    .Mui_defaultPage ul li{ 
+        list-style-type: none; 
+        float: left; 
+        margin: 0 8px; 
+        width: 25px; 
+        height: 25px;
+    }
+    .page-checked{
+        background: #66c7ff; 
+        color: #fff;
+        border:0px;
+    }
+    .page-checked1{
+        background: #fff; 
+        color: #787878;
+        border: 1px solid #ccc;
+    }
+    .Mui_defaultPage ul li a { 
+        text-decoration: none; 
+        display: block; 
+        text-align: center; 
+        line-height: 24px; 
+        width: 100%; 
+        height: 100%; 
+        text-align: center; 
+        vertical-align: middle;
+        -webkit-border-radius: 50%; 
+        border-radius: 50%;   
+    }
+    .Mui_defaultPage .pre, .Mui_defaultPage .next { 
+        width: 20px; 
+        height: 20px; 
+        margin-top: 3px;
+    }
+    .Mui_defaultPage .pre a, .Mui_defaultPage .next a { 
+        line-height: 18px;
+    }
+    .Mui_defaultPage:after, .Mui_defaultPage:before { 
+        content: ""; 
+        display: table; 
+        clear: both; 
+    }
+
+    .Mui_defaultPage ul li a:hover { 
+        background: #66c7ff; 
+        color: #fff;
+        border:0px; 
+    }
+    .page-unchecked { 
+        background: #fff; 
+        color: #787878;
+        border: 1px solid #cacaca;
+    }
+    .mar-l{
+        margin-left: 10px;
+        width: 50px !important;
+        line-height: 30px;
+    }
+    input {
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-right: 0;
+    }
+    .page_qi li a:hover{
+        background: #ddd;
+        border: 1px solid #cccccc;
+        color: #000;
+    }
+    .page_qi>li>a{
+        border: 1px solid #cccccc;
+    } 
+    .page_qi li input{
+        width: 50px;
+        height: 35px;
+        outline: none;
+    }  
+    .page_qi .page_tiao{
+        line-height: 35px;
+        padding-left: 20px;
+    }
+    .page_qi .page_sheng{
+        width: 45px;
+        line-height: 25px;
+        padding-left: 10px;
+    }
+    .page_l{
+       background: url(../paging/img/page_l.png) no-repeat !important;
+       background-position-y:2px !important;
+   }
+   .page_r{
+        background: url(../paging/img/page_r.png) no-repeat !important;
+        background-position-y:2px !important;
+    }
+    .page_left a:hover{
+        background: url(../paging/img/page_left.png) no-repeat !important;
+        background-position-y:2px !important;
+    }
+    .page_right a:hover{
+        background: url(../paging/img/page_next.png) no-repeat !important;
+        background-position-y:2px !important;
+    }

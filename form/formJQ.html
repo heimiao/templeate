@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='../bootstrap/css/font-awesome.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link href="../bootstrap/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/mui.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap-datetimepicker.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="js/checkCode.js"></script>
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+
+	<body>
+		<form class="form-inline fi_add">
+			<div class="form-group fg_add">
+				<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+				<img src="img/jq/search.png"/>
+			</div>
+			<div class="form-group">
+				<label>成立时间</label>
+				<div class="input-group">
+					<input type="text" value=""  id="dateStart" class="form-control"data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd">
+					<span>
+						<img src="img/jq/date.png" class="dateStart"/>
+					</span>
+				</div>
+				<label>至</label>
+				<div class="input-group">
+					
+					<input type="text" value=""  id="dateEnd" class="form-control"data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd">
+					<span>
+						<img src="img/jq/date.png" class="dateEnd" />
+					</span>
+					
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail2">筛选</label>
+				<input type="text" class="form-control filter" id="exampleInputName2" placeholder="Jane Doe">
+
+			</div>
+			<div class="form-group">
+				<button class="bnsSearch_greyBtn">查询</button>
+				<button class="bnsCreat_blueBtn">创建</button>
+			</div>
+		</form>
+		<script type="text/javascript">
+			$(function(){
+				//日历
+				/*开始日期*/
+				$('#dateStart').datetimepicker({
+					language:  'zh-CN',
+			        weekStart: 1,
+			        todayBtn:  1,
+					autoclose: 1,
+					todayHighlight: 1,
+					startView: 2,
+					minView: 2,
+					forceParse: 0
+				}).on("click",function(ev){
+				    $("#dateStart").datetimepicker("setEndDate", $("#dateEnd").val());
+				    $(this).blur();
+				    $(this).focus();
+				});
+				
+				/*结束日期*/
+				$('#dateEnd').datetimepicker({
+					language:  'zh-CN',
+			        weekStart: 1,
+			        todayBtn:  1,
+					autoclose: 1,
+					todayHighlight: 1,
+					startView: 2,
+					minView: 2,
+					forceParse: 0
+				}).on("click", function (ev) {
+				    $("#dateEnd").datetimepicker("setStartDate", $("#dateStart").val()+);
+				    $(this).blur();
+				    $(this).focus();
+				});
+				//结束 
+			});
+		</script>
+	</body>
+</html>

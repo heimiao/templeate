@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*设置dialog_1样式*/
+
+.dialog_header{
+    background: #fff !important;
+}
+.modal-con{
+    border: 6px solid;
+    border-color: rgba(127,127,127,0.3);
+}
+.dia_block{
+    min-width: 600px;
+    .dia_header{
+        height: 45px;
+        line-height: 45px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: #2E363F;
+        
+        span{
+            cursor: pointer;
+        }
+        .dh_cont{
+            float: left;
+            margin-left: 20px;
+            color:#000;
+        }
+        .dh_close{
+            float: right;
+            margin-right: 20px;
+        }
+    }
+    
+    .dia_body{
+        min-height:100px;
+        background: #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 10px;
+    }
+    .del_con{
+        color: #000000;
+    }
+}

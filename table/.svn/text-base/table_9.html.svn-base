@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>交易方案</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='../bootstrap/css/font-awesome.min.css' type='text/css' media='screen' rel='stylesheet' />
+	<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+	<!--<link href='css/index.css' type='text/css' media='screen' rel='stylesheet' />-->
+	<link rel="stylesheet" href="../css/mui.css" />
+	<!--[if lt IE 9]>
+	   <script src="../bootstrap/js/createTag.js"></script>
+	   <script src="../bootstrap/js/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+			<table class="table table-hover enterprise_table">
+				<thead>
+					<tr>
+						<th>
+							序号
+						</th>
+						<th class="table_sx">
+							<span class="mar-t ">企业全称</span>
+							<span class="enterprise_sx">
+								<img src="img/enterprise_bottom.png" class="enterprise_s">
+								<img src="img/enterprise_top.png" class="enterprise_x">		
+							</span>
+						</th>
+						<th>所属行业</th>
+						<th>股权变更日期</th>
+						<th>公司类型</th>
+						<th>公司状态</th>
+						<th class="table_sx">
+							<span class="mar-t ">成立时间</span>
+							<span class="enterprise_sx">
+								<img src="img/enterprise_bottom.png" class="enterprise_s">
+								<img src="img/enterprise_top.png" class="enterprise_x">		
+							</span>
+						</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							<a href="#" class="t-00f">大唐电信</a>
+						</td>
+						<td>互联网</td>
+						<td><a href="" class="t-f00 underline">2015-02-25</a></td>
+						<td>有限责任</td>
+						<td>正常营业</td>
+						<td>2015-01-02</td>
+						<td class="n_underline">
+								<a href="#" class="t-f00 mar-r download1"><img src="img/table4.png">&nbsp;下载</a>
+								<a href="#" class="t-f00 mar-r download"><img src="img/enterprise_bian.png">&nbsp;编辑</a>
+								<a href="#" class="t-f00 download"><img src="img/trading1.png">&nbsp;删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+</body>
+</html>

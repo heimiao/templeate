@@ -1,0 +1,31 @@
+@charset "UTF-8";  
+/*分页*/   
+.Mui_mostPage{
+    margin:10px auto;
+     ul{
+         float:left; 
+         margin:0px;
+         padding:0px;
+         li{
+            a:hover{
+                background: #ddd;
+            }
+         }
+         .active{ background: #ddd;}
+     }
+     .text_page{
+         margin:10px;
+     }
+     .go_page{
+         float:left;
+         width:115px;   
+         .input-group-btn{
+             border:1px solid #ddd;
+            .btn-default{
+               height:34px; 
+            }
+         }
+     }
+}
+ 
+/*分页结束*/

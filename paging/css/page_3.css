@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*分页*/
+.Mui_mostPage { margin: 10px auto; }
+.Mui_mostPage ul { float: left; margin: 0px; padding: 0px; }
+.Mui_mostPage ul li a:hover { background: #ddd; }
+.Mui_mostPage ul .active { background: #ddd; }
+.Mui_mostPage .text_page { margin: 10px; }
+.Mui_mostPage .go_page { float: left; width: 115px; }
+.Mui_mostPage .go_page .input-group-btn { border: 1px solid #ddd; }
+.Mui_mostPage .go_page .input-group-btn .btn-default { height: 34px; }
+
+/*分页结束*/

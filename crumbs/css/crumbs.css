@@ -1,0 +1,26 @@
+.breadcrumb > li + li:before {
+  color: #5d646a;
+  content: "> ";
+  padding: 0 10px; }
+
+.crumbs .bread_crumb {
+  background: none;
+  margin-bottom: 0px; }
+
+.crumbs .breadcrumb img {
+  margin-top: -3px;
+  margin-right: 3px; }
+
+.Nav_enu {
+  height: 50px;
+  line-height: 50px; }
+  .Nav_enu img {
+    vertical-align: middle; }
+  .Nav_enu a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 3px;
+    color: #000;
+    vertical-align: middle; }
+
+/*# sourceMappingURL=crumbs.css.map */

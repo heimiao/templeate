@@ -1,0 +1,44 @@
+@charset "UTF-8"; 
+@import "mui/reset";
+@import "mui/mixins";
+@import "mui/variables"; 
+/**************************************以上是基础样式非必要时候请勿改动**************************************/
+//框架布局
+@import "mui/layout";  
+//左侧菜单选项
+@import "mui/menu_1"; 
+@import "mui/menu_2";  
+@import "mui/menu_3"; 
+ 
+@import "mui/tab_1";  
+//////////之下是未开发的组件
+//按钮样样式
+@import "mui/button"; 
+
+//弹框
+@import "mui/dialog1"; 
+
+ 
+//表格
+@import "mui/table_1";
+//@import "mui/table_2";
+//form
+@import "mui/form";
+@import "mui/form1";
+@import "mui/formJQ";
+
+
+//分页效果
+@import "mui/page";  
+@import "mui/page_3";  
+@import "mui/page_4";  
+
+
+//面包屑导航
+@import "mui/crumbs"; 
+
+//title
+@import "mui/title"; 
+
+//上传
+@import "mui/upload"; 

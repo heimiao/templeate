@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../css/mui.css" />		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="col-md-12">
+			  <div class="editer_Blc">
+			  	<form id="userForm" method="post" class="form-horizontal" action="javascript:void(0)">
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	用户名
+								<span class="attionColor">*</span>
+						    </label>
+						    <div class="col-md-9" style="position: relative;">
+						      <input type="text" class="form-control" name="firstname" />
+						    </div>
+						</div>
+				 	  </div>
+				 	  <div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	密码
+								<span class="attionColor">*</span>
+						    </label>
+						    <div class="col-md-9" style="position: relative;">
+						      <input type="password" class="form-control" name="pwd" />
+						    </div>
+						</div>
+				 	  </div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	联系方式
+								<span class="attionColor">*</span>
+						    </label>
+						    <div class="col-md-9" style="position: relative;">
+						      <input type="text" class="form-control" name="tel" />
+						    </div>
+						</div>
+				 	  </div>
+				 	  <div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	邮箱
+						    	<span class="attionColor">*</span>
+						    </label>
+						    <div class="col-md-9" style="position: relative;">
+						      <input type="email" class="form-control" name="email" />
+						    </div>
+						</div>
+				 	  </div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	姓名
+						    </label>
+						    <div class="col-md-9">
+						      <input type="text" class="form-control"/>
+						    </div>
+						</div>
+				 	  </div>
+				 	  <div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	性别
+						    </label>
+						    <div class="col-md-9">
+						      <select class="form-control">
+						      	<option>男</option>
+						      	<option>女</option>
+						      	<option>不详</option>
+						      </select>
+						    </div>
+						</div>
+				 	  </div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	身份证号
+						    </label>
+						    <div class="col-md-9">
+						      <input type="text" class="form-control"/>
+						    </div>
+						</div>
+				 	  </div>
+				 	  <div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	年龄
+						    </label>
+						    <div class="col-md-9">
+						      <select class="form-control">
+						      	<option>28</option>
+						      	<option>58</option>
+						      	<option>68</option>
+						      </select>
+						    </div>
+						</div>
+				 	  </div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	毕业院校
+						    </label>
+						    <div class="col-md-9">
+						      <input type="text" class="form-control"/>
+						    </div>
+						</div>
+				 	  </div>
+				 	  <div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	居住地
+						    </label>
+						    <div class="col-md-9">
+						      <input type="text" class="form-control"/>
+						    </div>
+						</div>
+				 	  </div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	户口所在地
+						    </label>
+						    <div class="col-md-9">
+						      <input type="text" class="form-control"/>
+						    </div>
+						</div>
+				 	  </div>
+				 	  <div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	最高学历
+						    </label>
+						    <div class="col-md-9">
+						      <select class="form-control">
+						      	<option>本科</option>
+						      	<option>大专</option>
+						      	<option>中专</option>
+						      </select>
+						    </div>
+						</div>
+				 	  </div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	婚姻状况
+						    </label>
+						    <div class="col-md-9">
+						      <select class="form-control">
+						      	<option>未婚</option>
+						      	<option>已婚</option>
+						      </select>
+						    </div>
+						</div>
+				 	  </div>
+				 	  <div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	简历
+						    </label>
+						    <div class="col-md-9">
+						      <!--上传-->
+						      <div class="center">
+								<div class="conts">
+									<input type="text" class="form-control" id="scont" placeholder="上传简历"/>
+								</div>
+								<div class="btns">
+									<label for="gender1">上传</label>
+									<input type="file" name="gender" id="gender1" class="g1" onchange="getPath()"/>
+								</div>
+							  </div>
+						    </div>
+						</div>
+				 	  </div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    	登录类型
+						    </label>
+						    <div class="col-md-9">
+						      <select class="form-control">
+						      	<option>请选择类型</option>
+						      	<option>QQ登录</option>
+						      	<option>Msn登录</option>
+						      	<option>微信登录</option>
+						      </select>
+						    </div>
+						</div>
+			 	    </div>
+				 	<div class="col-md-6">
+				 	  	<div class="form-group">
+						    <label class="col-md-3 control-label">
+						    </label>
+						    <div class="col-md-9">
+						    </div>
+						</div>
+				 	</div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6" >
+			 	  		<div class="form-group">
+							<label class="control-label col-md-3">
+								角色设置
+							</label>
+							<div class="role col-md-9 Two_select">
+								<select id="select" class="selectc" multiple="multiple" size="5">
+									<option>管理员</option>
+									<option>普通员工</option>
+									<option>普通员工222</option>
+								</select>
+								<span class="role_arrow">
+				    		        <img src="img/dou_arrows.jpg"/>
+					    		    <span id="left" class="left_arrow"></span>
+									<span id="right" class="right_arrow"></span>
+								</span>
+								<select id="select1" class="selectc" multiple="multiple" size="5">
+									<option>管理员</option>
+									<option>普通员工</option>
+									<option>普通员工222</option>
+								</select>
+							</div>
+						</div>
+			 	  	</div>
+			 	  </div>
+			 	  <div class="row">
+			 	  	<div class="col-md-6">
+				 	  	<div class="form-group">
+				 	  		<label class="col-md-3 control-label">
+						    </label>
+						    <div class="col-md-9">
+						    	<button class="editer_blueBtn " type="submit">确认</button>
+								<button class="editer_blackBtn qx_chuang" type="button">取消</button>
+						    </div>
+						</div>
+				 	  </div>
+			 	  </div>
+		 	  	</form>
+			  </div>
+		 	</div>
+ 
+		 	<script type="text/javascript">
+			$(function(){  
+				//向左按钮
+				$("#left").click(function(){ 
+		            //第一，点击向左按钮清空id:select中option的样式
+		            $('#select option').removeAttr("selected");
+		            //第二，删除id：select1中option
+		            var $options = $('#select1 option:selected');   
+		            var $remove = $options.remove(); 
+		            //第三，给select添加删除select1中的option
+		            $remove.attr("selected","selected").appendTo('#select');   
+		        });  
+				//向右按钮
+		        $("#right").click(function(){  
+		        	//第一，点击向左按钮清空id:select中option的样式
+		            $('#select1 option').removeAttr("selected");
+		            //第二，删除id：select1中option
+		            var $options = $('#select option:selected');   
+		            var $remove = $options.remove(); 
+		            //第三，给select添加删除select1中的option
+		            $remove.attr( "selected1","selected").appendTo('#select1');   
+	        });  
+	     });
+			</script>
+	</body>
+</html>

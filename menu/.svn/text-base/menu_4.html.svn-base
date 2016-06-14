@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>导航菜单</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/menu_4.css" />
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/menu_4.js"></script>
+	</head>
+	<body>
+		 <div style="background: #2e363f;">
+		 	<!--
+             	作者：glanscer@163.com
+             	时间：2015-12-08
+             	描述：以下为主要内容
+             -->
+			<nav class="left-menu">
+				<div class="first-menu">
+					<span>
+						<a>
+							<img src="img/black_circle.jpg"/>系统管理<img class="right" src="img/right_arrow.jpg"/>
+						</a>
+					</span>
+					<ul style="display:none">
+						<li>
+							<span>
+								<a>
+									<img src="img/doubleArrow_grey.jpg"/>配置管理<img class="right" src="img/right_arrow.jpg"/>
+								</a>
+							</span>
+							<ul style="display:none">
+								<li>
+									<a target="ifm" href="#" class="menuOut">
+										权限管理<img style="display:none" class="right" src="img/left_arrow.png"/>
+									</a>
+								</li>
+								<li>
+									<a target="ifm" href="#" class="menuOut">
+										菜单配置<img style="display:none" class="right" src="img/left_arrow.png"/>
+									</a>
+								</li>
+								<li>
+									<a target="ifm" href="404.html" class="menuOut">
+										404页面<img style="display:none" class="right" src="img/left_arrow.png"/>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							<span>
+								<a>
+									<img src="img/doubleArrow_grey.jpg"/>插件管理<img class="right" src="img/right_arrow.jpg"/>
+								</a>
+							</span>
+							<ul style="display:none">
+								<li>
+									<a target="ifm" href="welcom.html" class="menuOut">插件列表<img  style="display:none" class="right" src="img/left_arrow.png"/></a>
+								</li>
+								<li>
+									<a target="ifm" href="welcom.html" class="menuOut">已安装插件<img  style="display:none" class="right" src="img/left_arrow.png"/></a>
+								</li>
+								<li>
+									<a target="ifm" href="welcom.html" class="menuOut">可升级插件<img  style="display:none" class="right" src="img/left_arrow.png"/></a>
+								</li>
+								<li>
+									<a target="ifm" href="welcom.html" class="menuOut">欢迎页面<img  style="display:none" class="right" src="img/left_arrow.png"/></a>
+								</li> 
+							</ul>
+						</li>
+						<li>
+							<span>
+								<a>
+									<img src="img/doubleArrow_grey.jpg"/>登记应用管理<img class="right" src="img/right_arrow.jpg"/>
+								</a>
+							</span>
+							<ul style="display:none">
+								<li>
+									<a target="ifm" href="#" class="menuOut">登记应用列表<img style="display:none" class="right"  src="img/left_arrow.png"/></a>
+								</li>
+								<li>
+									<a target="ifm" href="#" class="menuOut">注册应用<img style="display:none" class="right"  src="img/left_arrow.png"/></a>
+								</li>
+								<li>
+									<a target="ifm" href="http://www.sina.com" class="menuOut">新浪菜单<img style="display:none" class="right"  src="img/left_arrow.png"/></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div> 
+				<div class="first-menu">
+					<span>
+						<a><img src="img/black_circle.jpg"/>自定义菜单<img class="right" src="img/right_arrow.jpg"/></a>
+					</span>
+				</div>
+			</nav>
+			<!--
+            	作者：glanscer@163.com
+            	时间：2015-12-08
+            	描述：结束
+            -->
+		 </div>
+	</body>
+</html>

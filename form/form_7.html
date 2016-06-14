@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='..//bootstrap/css/font-awesome.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap-datetimepicker.css" />
+		<link rel="stylesheet" href="../css/mui.css" />		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<!--<script type="text/javascript" src="../bootstrap/js/placeholderfriend.js" ></script>-->
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script>
+		<!--<script type="text/javascript" src="../bootstrap/js/bootstrap-datetimepicker.zh-CN.js" ></script>-->
+		<script type="text/javascript" src="../bootstrap/js/bootstrap-datepicker.js"></script>
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<form class="form-horizontal">
+			<div class="col-md-4 col-sm-6">
+			    <div class="form-group" >
+				    <label for="inputPassword3" class="col-sm-4 control-label la">债务期限</label>
+				    <div class="col-sm-3" style="position: relative;">
+				    	<input type="text" class="form-control" id="startDate" value="">
+				    	<th><a class="btn small form-control" id="dp4" data-date-format="yyyy-mm-dd" data-date="2015-02-20">Change</a></th>
+				    </div>
+			        <span class="trad_zhi left">至</span>
+				     <div class="col-sm-3" style="position: relative;">
+				    	<input type="text" class="form-control" id="endDate" value="">
+				    	<th><a class="btn1 small form-control" id="dp5" data-date-format="yyyy-mm-dd" data-date="2015-02-25">Change</a></th>
+				    </div>
+			    </div>
+			</div>
+		</form>
+		<script>
+		$(function(){
+			window.prettyPrint && prettyPrint();
+			var startDate = new Date(2015,12,20);
+			var endDate = new Date(2015,12,25);
+			$('#dp4').datepicker()
+				.on('changeDate', function(ev){
+					if (ev.date.valueOf() > endDate.valueOf()){
+						alert('开始日期不能大于结束日期');
+					} else {
+						startDate = new Date(ev.date);
+						$('#startDate').val($('#dp4').data('date'));
+					}
+					$('#dp4').datepicker('hide');
+				});
+			$('#dp5').datepicker()
+				.on('changeDate', function(ev){
+					if (ev.date.valueOf() < startDate.valueOf()){
+						alert('结束日期不能小于开始日期');
+					} else {
+						endDate = new Date(ev.date);
+						$('#endDate').val($('#dp5').data('date'));
+					}
+					$('#dp5').datepicker('hide');
+				});
+		});
+	</script>
+	</body>
+</html>

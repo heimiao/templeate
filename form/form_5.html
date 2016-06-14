@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='..//bootstrap/css/font-awesome.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../css/mui.css" />		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<!--<script type="text/javascript" src="../bootstrap/js/placeholderfriend.js" ></script>-->
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/formValidation.js"></script>
+		<script type="text/javascript" src="js/bootstrap1.js" ></script>
+		<script type="text/javascript" src="js/zh_CN.js" ></script>
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<form class="form-horizontal" id="zqForm">
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">债权人名称</label>
+					    <div class="col-sm-8">
+					        <input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_zqr">
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">债务人名称</label>
+					    <div class="col-sm-8">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_zwr">
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">出资方式</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>IPO/并购</option>
+					    		<option>债券投资</option>
+					    		<option>投资退出</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">币种</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>人民币</option>
+					    		<option>美元</option>
+					    		<option>欧元</option>
+					    		<option>尽职调查</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    		<option>投资意向书</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">金额</label>
+					    <div class="col-sm-8">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_je">
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">债务期限</label>
+					    <div class="col-sm-3">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_strat">
+					    </div>
+				        <div class="col-sm-1">至</div>
+					     <div class="col-sm-3">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_end">
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">利息起算日</label>
+					    <div class="col-sm-8">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_lxqsr">
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">票面利率</label>
+					    <div class="col-sm-8" style="position: relative;">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_pmll">
+					    	<span style="position: absolute;right: 0px;top: 5px;">%</span>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">还本付息方式</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>每半年付息，到期一次还本息</option>
+					    		<option>每半年付息，到期一次还本息</option>
+					    		<option>每半年付息，到期一次还本息</option>
+					    		<option>每半年付息，到期一次还本息</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">担保性条款</label>
+					    <div class="col-sm-8">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_dbxtk">
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">条款备注</label>
+					    <div class="col-sm-8">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="" name="trad_tkbz">
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">其他特殊约定</label>
+					    <div class="col-sm-8">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="">
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-8 col-sm-12">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label la">违约事件</label>
+					    <div class="col-sm-10" >
+					    	<textarea class="form-control" rows="5" onresize="none"></textarea>
+					    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-4 control-label la">债转股</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>每半年付息，到期一次还本息</option>
+					    		<option>每半年付息，到期一次还本息</option>
+					    		<option>每半年付息，到期一次还本息</option>
+					    		<option>每半年付息，到期一次还本息</option>
+					    	</select>
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">争议解决方式</label>
+					    <div class="col-sm-8">
+					    	<input type="email" class="form-control" id="inputEmail3" placeholder="">
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-8 col-sm-12">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label la">争议解决方式</label>
+					    <div class="col-sm-10" >
+					    	<textarea class="form-control" rows="5" onresize="none"></textarea>
+					    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">退出方式</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>IPO/并购</option>
+					    		<option>美元</option>
+					    		<option>欧元</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+				    <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-4 control-label la">推出信息</label>
+					    <div class="col-sm-8">
+					    	<select class="form-control">
+					    		<option>出让方</option>
+					    		<option>美元</option>
+					    		<option>欧元</option>
+					    	</select>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<label class="col-sm-4"></label>
+					<div class="col-sm-8">
+						<button type="submit" class="userMsg_trueBtn  btn-ok">
+	    					<span class="ladda-label">确定</span>
+	    				</button>
+	    				<button type="button" class="userMsg_calBtn" data-dismiss="modal">
+	    					<span class="ladda-label">取消</span>
+	    				</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		
+		<script type="text/javascript">
+		//校验
+		$(document).ready(function() {
+			$('#zqForm').formValidation({
+			        err: {
+			            container: 'tooltip'
+			        },
+			        icon: {
+			            valid: 'glyphicon glyphicon-ok',
+			            invalid: 'glyphicon glyphicon-remove',
+			            validating: 'glyphicon glyphicon-refresh'
+			        },
+			        fields: {
+			            trad_zqr: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '债权人不能为空'
+			                    }
+			                }
+			            },
+			            trad_zwr: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '债务人不能为空'
+			                    } 
+			                }
+			            },
+			            trad_je: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '金额不能为空'
+			                    } 
+			                }
+			            },
+			            trad_strat: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '债务期限开始时间不能为空'
+			                    } 
+			                }
+			            },
+			            trad_end: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '债务期限结束时间不能为空'
+			                    } 
+			                }
+			            },
+			            trad_lxqsr: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '利息起算日不能为空'
+			                    } 
+			                }
+			            },
+			            trad_pmll: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '票面利率不能为空'
+			                    } 
+			                }
+			            },
+			            trad_dbxtk: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '担保性条款不能为空'
+			                    } 
+			                }
+			            },
+			            trad_tkbz: {
+			                validators: {
+			                    notEmpty: {
+			                        message: '条款备注不能为空'
+			                    } 
+			                }
+			            }
+			        }
+			    });
+			
+			});
+			 
+		</script>
+	</body>
+</html>

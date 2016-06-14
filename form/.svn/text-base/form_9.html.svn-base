@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link href='../bootstrap/css/font-awesome.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link href='../bootstrap/css/bootstrap.min.css' type='text/css' media='screen' rel='stylesheet' />
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap-datetimepicker.css" />
+		<link rel="stylesheet" href="../css/mui.css" />		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap-datepicker.js"></script>
+		 <script type="text/javascript" src="../bootstrap/js/bootstrap-datetimepicker.js"></script> 
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+		<!--[if lt IE 9]>
+		   <script src="../bootstrap/js/createTag.js"></script>
+		   <script src="../bootstrap/js/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+			<form class="form-inline fi_add">
+ 				<!--输入框-->
+ 				<div class="form-group fg_add">
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+					<img src="img/jq/search.png"/>
+				</div>
+	 			<div class="form-group">
+ 				    <div class="form-group has-feedback date_img"  style="position: relative;">
+						<input type="text" readonly="readonly"  class="form-control form_date form_datetime "data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" id="startDate"/>
+						<img src="img/date.png">
+						<th><a class="btn2 small form-control" id="dp4" data-date-format="yyyy-mm-dd" data-date="2015-02-20"></a></th>
+					</div>
+					
+					<div class="form-group has-feedback">至</div>
+				</div>
+				<div class="form-group">
+					<div class="form-group has-feedback date_img" style="position: relative;">
+						<input type="text" readonly="readonly" class="form-control form_date form_datetime "data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" id="endDate"/>
+						<img src="img/date.png">
+						<th><a class="btn1 small form-control" id="dp5" data-date-format="yyyy-mm-dd" data-date="2015-02-25"></a></th>
+					</div>
+	 			</div>
+	 			<div class="form-group">
+					<label for="exampleInputEmail2">筛选</label>
+					<input type="text" class="form-control filter" id="exampleInputName2" placeholder="Jane Doe">
+	
+				</div>
+ 			</form>
+		<script>
+		$(function(){
+			var startDate = new Date();
+			var endDate = new Date();
+			$('#dp4').datepicker({
+					language:  'zh-CN',
+			        weekStart: 1,
+			        todayBtn:  1,
+					autoclose: 1,
+					todayHighlight: 1,
+					startView: 2,
+					minView: 2,
+					forceParse: 0
+				})
+				.on('changeDate', function(ev){
+					if (ev.date.valueOf() > endDate.valueOf()){
+						alert('开始日期不能大于结束日期');
+					} else {
+						startDate = new Date(ev.date);
+						$('#startDate').val($('#dp4').data('date'));
+					}
+					$('#dp4').datepicker('hide');
+				});
+			$('#dp5').datepicker({
+					language:  'zh-CN',
+			        weekStart: 1,
+			        todayBtn:  1,
+					autoclose: 1,
+					todayHighlight: 1,
+					startView: 2,
+					minView: 2,
+					forceParse: 0
+				})
+				.on('changeDate', function(ev){
+					if (ev.date.valueOf() < startDate.valueOf()){
+						alert('结束日期不能小于开始日期');
+					} else {
+						endDate = new Date(ev.date);
+						$('#endDate').val($('#dp5').data('date'));
+					}
+					$('#dp5').datepicker('hide');
+				});
+		});
+	</script>
+	</body>
+</html>

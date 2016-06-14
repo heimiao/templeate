@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ystxt/!svn/ver/23981/fe/template/lib/bootstrap-datetimepicker-master
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ystxt/!svn/ver/23981/fe/template/lib/bootstrap-datetimepicker-master/.gitignore
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ystxt/!svn/ver/23981/fe/template/lib/bootstrap-datetimepicker-master/.travis.yml
+END
+.gitattributes
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ystxt/!svn/ver/23981/fe/template/lib/bootstrap-datetimepicker-master/.gitattributes
+END
+.npmignore
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ystxt/!svn/ver/23981/fe/template/lib/bootstrap-datetimepicker-master/.npmignore
+END
